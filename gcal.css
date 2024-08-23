@@ -1,0 +1,210 @@
+:root {
+  --bg-toggle: 1;
+  --bg-link: url('https://drive.google.com/uc?export=view&id=1mbn4fnJ1wLF1hA7JiB0kntZRPwcYlnfU');
+  --bg-opacity: 0.25;
+  --clr-n0: #000000;
+  --clr-n5: #555555;
+  --clr-na: #aaaaaa;
+  --clr-nf: #ffffff;
+  --clr-a01: #101030;
+  --clr-a02: #101830;
+  --clr-a10: #102030;
+  --clr-a15: #112244;
+  --clr-a20: #203060;
+  --clr-a21: #204080;
+  --clr-a22: #304080;
+  --clr-a25: #406080;
+  --clr-a30: #3060a0;
+  --clr-a50: #80a0f0;
+  --clr-a97: #e0f0ff;
+  --clr-a98: #f0f0ff;
+  --clr-a99: #f8f8ff;
+}
+
+
+/***** MAIN STUFF *****/
+
+/* Font: https://font.download/font/autumn-harvest */
+.J-Ke, .aKz, .hP, .GX, .GT, .J-N-Jz, .gD, .go, .g3, .ams, .gI, .yP, .zF, .bog, .ZG, .aAv, .CK, .CJ, .bAq, .av, .d-Na-N-UX, .d-Na-N-M7-awE, .ZH, .gstq_d, .J-J5-Ji, .acM, .xW, .asor_b, .asor_e, .a8k, .H5, .ts, .Og, .ayf, .hN, .y2, .bmE, .aL8, .go, .hb, .Kj-JD-K7-K0, .xy, .ajK, .xx, .J-at1-auR, .aYF, .aoT, .agP.aFw, .aIa.aFw, .agP.aFx, .aIa.aFx, .aQ2, .oL, .aKs, .v .fZ, .v .f1, .dt, .r7, .ra, body, input, textarea, select, button, .Jy, .asd, .VO, .OG, .Q2, .aIY, .a21, .ST, .bY, .aD, .l0 {
+  font-family: autumn harvest !important;
+  color: var(--clr-nf) !important;
+}
+
+/* right side panel */
+.Kk7lMc-QWPxkf-LgbsSe-haAclf,
+/* support */
+.h8Aqhb {
+  display: none !important;
+}
+
+
+/***** HEADER BAR *****/
+
+/* background */
+.gb_Da {
+  background: var(--clr-a01) !important;
+}
+/* text */
+.gb_Ic *, .gb_qd.gb_8c, .gTMcsb * {
+  color: var(--clr-nf) !important;
+}
+
+/* week text */
+.nSu5zd {
+  color: var(--clr-a20);
+}
+/* week background */
+.KPyFeb.C0t7Sd.HAir {
+  background: var(--clr-a97) !important;
+}
+
+/* buttons */
+.VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc.lAIgp.belXNd *, .gb_C * {
+  color: var(--clr-nf) !important;
+}
+
+
+/***** MAIN CALENDAR *****/
+
+/* day labels */
+.sVASAd {
+  color: var(--clr-nf) !important;
+}
+
+
+/* time axis, GMT time */
+.R6TFwe, .sS0sZd {
+  background: transparent !important;
+}
+.wO6pL.iHNmdb, .H4QSac.ouBNcf {
+  color: var(--clr-a97) !important;
+}
+
+/* body */
+.tEhMVd, .pbeTDb {
+  background: linear-gradient(0deg, var(--clr-a10), var(--clr-a20)) !important;
+}
+.pbeTDb::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--bg-link);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(var(--bg-opacity));
+  /* opacity: calc(var(--bg-opacity) * var(--bg-toggle)); */
+}
+/* day with active events */
+.F262Ye {
+  background: transparent !important;
+}
+
+/* done task */
+.w9eXqe {
+  color: var(--clr-nf);
+}
+/* done task bg */
+.UflSff {
+  background: var(--clr-a22) !important;
+}
+/* done task check */
+.GuKFM {
+  color: var(--clr-n5) !important;
+}
+
+/* task not done */
+.KF4T6b.jKgTF.KPveV.QGRmIf {
+  background: var(--clr-a30) !important;
+}
+/* task not done check */
+.jB5sh {
+  color: var(--clr-a97) !important;
+}
+/* circle around check */
+/* .meh4fc.KU3dEf.CPXyj.GuKFM {
+  background: var(--clr-a30) !important;
+} */
+
+/* time table grid */
+.uEzZIb *, .sJ9Raf::after {
+  border-color: var(--clr-a25) !important;
+  /* outline-color: #00ff00 !important; */
+}
+
+/* table top header grid */
+.bOyeud, .ZDEHt {
+  border-color: var(--clr-a25) !important;
+}
+
+/* highlights */
+.uEzZIb::before {
+  background: none !important;
+}
+.lqYlwe::before, .uEzZIb::after, .hEtGGf.HDIIVe.sBn5T::after {
+  background: none !important;
+}
+
+/* event left margin */
+.jSrjCf, .pmUZFe {
+  background: transparent !important;
+}
+.KF4T6b.jKgTF.PT41Tc.QGRmIf {
+  margin: 0px !important;
+  border-radius: 4px !important;
+}
+
+/* embedded event border */
+.Hrn1mc::after {
+  border-color: var(--clr-a10) !important;
+}
+
+
+/***** LEFT SIDE BAR *****/
+
+/* create button */
+.U26fgb.c7fp5b.FS4hgd.GDoOPd.mAozAc {
+  background: var(--clr-a30);
+}
+.U26fgb.c7fp5b.FS4hgd.GDoOPd.mAozAc:hover {
+  background: var(--clr-a50);
+  filter: brightness(1.2);
+}
+
+/* mini calendar */
+.mkaajd {
+  color: var(--clr-nf) !important;
+}
+.k50Dh {
+  color: var(--clr-a50) !important;
+}
+/* week number column */
+.f1QMue.ncGL0c {
+  background: var(--clr-a50) !important;
+  border-color: var(--clr-a50) !important;
+}
+/* current day */
+.pWJCO.c1VYmf * {
+    background: var(--clr-a50) !important;
+}
+
+/* search for people */
+.WmnPA.gOPnwc.tpspnb, .TBA7qc * {
+  background: var(--clr-a21) !important;
+}
+.TBA7qc * {
+  background: none !important;
+}
+.g1NEYe, .OkcShb {
+  color: var(--clr-nf) !important;
+}
+.VfPpkd-fmcmS-wGMbrd {
+  caret-color: #ffffff !important;
+}
+
+/* calendar filters */
+.qOsM1d.wBon4c * {
+  color: var(--clr-nf) !important;
+}
+.DYTqTd:hover, .nUt0vb:hover {
+  background: var(--clr-a20) !important;
+}

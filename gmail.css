@@ -1,0 +1,92 @@
+:root {
+  --bg-toggle: 1;
+  --bg-link: url('https://drive.google.com/uc?export=view&id=1mbn4fnJ1wLF1hA7JiB0kntZRPwcYlnfU');
+  --bg-opacity: 0.5;
+  --clr-a01: #101030;
+  --clr-a10: #102030;
+  --clr-a15: #112244;
+  --clr-a20: #203060;
+  --clr-a30: #3060a0;
+  --clr-a50: #80a0f0;
+  --clr-a97: #e0f0ff;
+  --clr-a98: #f0f0ff;
+  --clr-a99: #f8f8ff;
+}
+
+
+/***** MAIN STUFF *****/
+
+/* Font: https://font.download/font/autumn-harvest */
+.J-Ke, .aKz, .hP, .GX, .GT, .J-N-Jz, .gD, .go, .g3, .ams, .gI, .yP, .zF, .bog, .ZG, .aAv, .CK, .CJ, .bAq, .av, .d-Na-N-UX, .d-Na-N-M7-awE, .ZH, .gstq_d, .J-J5-Ji, .acM, .xW, .asor_b, .asor_e, .a8k, .H5, .ts, .Og, .ayf, .hN, .y2, .bmE, .aL8, .go, .hb, .Kj-JD-K7-K0, .xy, .ajK, .xx, .J-at1-auR, .aYF, .aoT, .agP.aFw, .aIa.aFw, .agP.aFx, .aIa.aFx, .aQ2, .oL, .aKs, .v .fZ, .v .f1, .dt, .r7, .ra, body, input, textarea, select, button, .Jy, .asd, .VO, .OG, .Q2, .aIY, .a21, .ST, .bY, .aD, .l0 {
+  font-family: autumn harvest !important;
+}
+
+/* primary header bar */
+.bbg {
+  background: var(--clr-a01) !important;
+}
+/* body */
+.aqk, .z {
+  background: linear-gradient(0deg, var(--clr-a10), var(--clr-a20));
+  position: relative;
+}
+.z::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--bg-link);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(var(--bg-opacity));
+  /* opacity: calc(var(--bg-opacity) * var(--bg-toggle)); */
+}
+/* side bar */
+.aeN {
+  background: linear-gradient(0deg, var(--clr-a10), var(--clr-a20)) !important;
+  filter: brightness(calc(0.8 + 0.2 * var(--bg-toggle)));
+}
+
+/* mail item list */
+.zA {
+  transition: .2s !important;
+}
+.zA:hover {
+  transform: scaleX(0.995) !important;
+  filter: brightness(1.2) !important;
+}
+.zE {
+  background: linear-gradient(90deg, var(--clr-a20), var(--clr-a15)) !important;
+}
+
+/* compose button */
+.z0>.L3 {
+  /* width: 100%; */
+  margin-right: 12px !important;
+  border-radius: 50px !important;
+  background-color: var(--clr-a10) !important;
+  transition: background-color 0.2s ease !important;
+  font-size: larger !important;
+  color: #ffffff !important;
+  border: 2px solid var(--clr-a01) !important;
+}
+.z0>.L3:hover {
+  background-color: var(--clr-a15) !important;
+}
+
+/* right side panel */
+.brC-dA-I.aT5-aOt-I-Jp,
+/* support */
+.zo {
+  display: none !important;
+}
+
+
+/***** NEW EMAIL *****/
+
+/* header bar */
+.l {
+  background: linear-gradient(0deg,
+                              var(--clr-a50),
+                              color-mix(in srgb, var(--clr-a50), white 30%))
+              !important;
+}

@@ -1,0 +1,151 @@
+/* adapted from https://github.com/b-chen00/spicetify-themes/tree/master/StarryNight */
+
+:root {
+  --sky-top: #112244;
+  --sky-bottom: #000011;
+  --star-max-size: 3px;
+  --star: #ffffff;
+  --star-glow:#ffffff;
+  --shooting-star: #ffffffff;
+  --shooting-star-glow: #ffffff44;
+}
+
+/* Font: https://font.download/font/autumn-harvest */
+html {
+  font-family: autumn harvest !important;
+}
+
+.z-0 {
+  background: linear-gradient(0deg, var(--sky-top), var(--sky-bottom));
+}
+
+.star-bg-container {
+  position: fixed;
+  z-index: -2;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+@keyframes twinkle1 {
+  0% {
+    box-shadow: 0px 0px 8px 2px var(--star-glow);
+  }
+  20% {
+    box-shadow: 0px 0px -8px 2px var(--star-glow);
+  }
+  40% {
+    box-shadow: 0px 0px -8px 2px var(--star-glow);
+  }
+  60% {
+    box-shadow: 0px 0px -8px 2px var(--star-glow);
+  }
+  80% {
+    box-shadow: 0px 0px 8px 2px var(--star-glow);
+  }
+  100% {
+    box-shadow: 0px 0px 8px 2px var(--star-glow);
+  }
+}
+
+@keyframes twinkle2 {
+  0% {
+    box-shadow: 0px 0px 8px 2px var(--star-glow);
+  }
+  20% {
+    box-shadow: 0px 0px 8px 2px var(--star-glow);
+  }
+  40% {
+    box-shadow: 0px 0px -8px 2px var(--star-glow);
+  }
+  60% {
+    box-shadow: 0px 0px -8px 2px var(--star-glow);
+  }
+  80% {
+    box-shadow: 0px 0px -8px 2px var(--star-glow);
+  }
+  100% {
+    box-shadow: 0px 0px 8px 2px var(--star-glow);
+  }
+}
+
+@keyframes twinkle3 {
+  0% {
+    box-shadow: 0px 0px -8px 2px var(--star-glow);
+  }
+  20% {
+    box-shadow: 0px 0px 8px 2px var(--star-glow);
+  }
+  40% {
+    box-shadow: 0px 0px 8px 2px var(--star-glow);
+  }
+  60% {
+    box-shadow: 0px 0px 8px 2px var(--star-glow);
+  }
+  80% {
+    box-shadow: 0px 0px -8px 2px var(--star-glow);
+  }
+  100% {
+    box-shadow: 0px 0px -8px 2px var(--star-glow);
+  }
+}
+
+@keyframes twinkle4 {
+  0% {
+    box-shadow: 0px 0px -8px 2px var(--star-glow);
+  }
+  20% {
+    box-shadow: 0px 0px -8px 2px var(--star-glow);
+  }
+  40% {
+    box-shadow: 0px 0px 8px 2px var(--star-glow);
+  }
+  60% {
+    box-shadow: 0px 0px 8px 2px var(--star-glow);
+  }
+  80% {
+    box-shadow: 0px 0px 8px 2px var(--star-glow);
+  }
+  100% {
+    box-shadow: 0px 0px -8px 2px var(--star-glow);
+  }
+}
+
+.shooting-star {
+  position: absolute;
+  width: var(--star-max-size);
+  height: var(--star-max-size);
+  background: var(--shooting-star);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 10px var(--shooting-star-glow);
+  left: initial;
+  z-index: -1;
+  rotate: 45deg;
+  animation: animate 1s linear;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+}
+
+/* shooting star trail */
+.shooting-star::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateX(-100%);
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--shooting-star));
+  opacity: 0.5;
+}
