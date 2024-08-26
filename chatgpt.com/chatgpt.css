@@ -4,6 +4,8 @@
   --sky-top: #112244;
   --sky-bottom: #000011;
   --star-max-size: 3px;
+  --shooting-star-blur-radius: 20px;
+  --shooting-star-glow-radius: 10px;
   --star: #ffffff;
   --star-glow:#ffffff;
   --shooting-star: #ffffffff;
@@ -120,7 +122,8 @@ html {
   height: var(--star-max-size);
   background: var(--shooting-star);
   border-radius: 50%;
-  box-shadow: 0 0 20px 10px var(--shooting-star-glow);
+  box-shadow: 0 0 var(--shooting-star-blur-radius)
+    var(--shooting-star-glow-radius) var(--shooting-star-glow);
   left: initial;
   z-index: -1;
   rotate: 45deg;

@@ -1,24 +1,22 @@
 :root {
-  --bg-toggle: 1;
-  --bg-link: url('https://drive.google.com/uc?export=view&id=1mbn4fnJ1wLF1hA7JiB0kntZRPwcYlnfU');
+  --bg-link: url('https://drive.google.com/uc?export=view&id=1W1kTxgLYfePtoshWORQZDr65OJRsccUh');
   --bg-opacity: 0.25;
+
   --clr-n0: #000000;
   --clr-n5: #555555;
   --clr-na: #aaaaaa;
   --clr-nf: #ffffff;
-  --clr-a01: #101030;
-  --clr-a02: #101830;
-  --clr-a10: #102030;
-  --clr-a15: #112244;
-  --clr-a20: #203060;
-  --clr-a21: #204080;
-  --clr-a22: #304080;
-  --clr-a25: #406080;
-  --clr-a30: #3060a0;
-  --clr-a50: #80a0f0;
-  --clr-a97: #e0f0ff;
-  --clr-a98: #f0f0ff;
-  --clr-a99: #f8f8ff;
+
+  --clr-header: #101030;
+  --clr-grad-dark: #102030;
+  --clr-grad-light: #203060;
+  --clr-button: #204080;
+  --clr-button-hover: #2050a0;
+  --clr-grid-lines: #406080;
+  --clr-task-done: #304080;
+  --clr-task-todo: #3060a0;
+  --clr-text-mid: #80a0f0;
+  --clr-text-light: #e0f0ff;
 }
 
 
@@ -30,7 +28,7 @@
   color: var(--clr-nf) !important;
 }
 
-/* right side panel */
+/* right side popout menu */
 .Kk7lMc-QWPxkf-LgbsSe-haAclf,
 /* support */
 .h8Aqhb {
@@ -42,7 +40,7 @@
 
 /* background */
 .gb_Da {
-  background: var(--clr-a01) !important;
+  background: var(--clr-header) !important;
 }
 /* text */
 .gb_Ic *, .gb_qd.gb_8c, .gTMcsb * {
@@ -51,11 +49,11 @@
 
 /* week text */
 .nSu5zd {
-  color: var(--clr-a20);
+  color: var(--clr-grad-light);
 }
 /* week background */
 .KPyFeb.C0t7Sd.HAir {
-  background: var(--clr-a97) !important;
+  background: var(--clr-text-light) !important;
 }
 
 /* buttons */
@@ -77,12 +75,12 @@
   background: transparent !important;
 }
 .wO6pL.iHNmdb, .H4QSac.ouBNcf {
-  color: var(--clr-a97) !important;
+  color: var(--clr-text-light) !important;
 }
 
 /* body */
 .tEhMVd, .pbeTDb {
-  background: linear-gradient(0deg, var(--clr-a10), var(--clr-a20)) !important;
+  background: linear-gradient(0deg, var(--clr-grad-dark), var(--clr-grad-light)) !important;
 }
 .pbeTDb::before {
   content: '';
@@ -92,7 +90,6 @@
   background-size: cover;
   background-position: center;
   filter: brightness(var(--bg-opacity));
-  /* opacity: calc(var(--bg-opacity) * var(--bg-toggle)); */
 }
 /* day with active events */
 .F262Ye {
@@ -105,7 +102,7 @@
 }
 /* done task bg */
 .UflSff {
-  background: var(--clr-a22) !important;
+  background: var(--clr-task-done) !important;
 }
 /* done task check */
 .GuKFM {
@@ -114,26 +111,25 @@
 
 /* task not done */
 .KF4T6b.jKgTF.KPveV.QGRmIf {
-  background: var(--clr-a30) !important;
+  background: var(--clr-task-todo) !important;
 }
 /* task not done check */
 .jB5sh {
-  color: var(--clr-a97) !important;
+  color: var(--clr-nf) !important;
 }
 /* circle around check */
 /* .meh4fc.KU3dEf.CPXyj.GuKFM {
-  background: var(--clr-a30) !important;
+  background: var(--clr-task-todo) !important;
 } */
 
 /* time table grid */
 .uEzZIb *, .sJ9Raf::after {
-  border-color: var(--clr-a25) !important;
-  /* outline-color: #00ff00 !important; */
+  border-color: var(--clr-grid-lines) !important;
 }
 
 /* table top header grid */
 .bOyeud, .ZDEHt {
-  border-color: var(--clr-a25) !important;
+  border-color: var(--clr-grid-lines) !important;
 }
 
 /* highlights */
@@ -155,7 +151,7 @@
 
 /* embedded event border */
 .Hrn1mc::after {
-  border-color: var(--clr-a10) !important;
+  border-color: var(--clr-grad-dark) !important;
 }
 
 
@@ -163,10 +159,10 @@
 
 /* create button */
 .U26fgb.c7fp5b.FS4hgd.GDoOPd.mAozAc {
-  background: var(--clr-a30);
+  background: var(--clr-button);
 }
 .U26fgb.c7fp5b.FS4hgd.GDoOPd.mAozAc:hover {
-  background: var(--clr-a50);
+  background: var(--clr-button-hover);
   filter: brightness(1.2);
 }
 
@@ -175,21 +171,21 @@
   color: var(--clr-nf) !important;
 }
 .k50Dh {
-  color: var(--clr-a50) !important;
+  color: var(--clr-text-mid) !important;
 }
 /* week number column */
 .f1QMue.ncGL0c {
-  background: var(--clr-a50) !important;
-  border-color: var(--clr-a50) !important;
+  background: var(--clr-text-mid) !important;
+  border-color: var(--clr-text-mid) !important;
 }
 /* current day */
 .pWJCO.c1VYmf * {
-    background: var(--clr-a50) !important;
+    background: var(--clr-text-mid) !important;
 }
 
 /* search for people */
 .WmnPA.gOPnwc.tpspnb, .TBA7qc * {
-  background: var(--clr-a21) !important;
+  background: var(--clr-button) !important;
 }
 .TBA7qc * {
   background: none !important;
@@ -206,5 +202,11 @@
   color: var(--clr-nf) !important;
 }
 .DYTqTd:hover, .nUt0vb:hover {
-  background: var(--clr-a20) !important;
+  background: var(--clr-grad-light) !important;
+}
+
+
+/***** RIGHT SIDE BAR *****/
+.Kk7lMc-DWWcKd-OomVLb-haAclf {
+  background: linear-gradient(0deg, var(--clr-grad-dark), var(--clr-grad-light)) !important;
 }

@@ -23,13 +23,14 @@ function createShootingStar(backgroundContainer, rs) {
 
   const prTopSpawn = window.innerWidth / (window.innerHeight + window.innerWidth);
   const maxStarSize = parseInt(rs.getPropertyValue('--star-max-size'), 10);
+  const starGlowRadius = parseInt(rs.getPropertyValue('--shooting-star-glow-radius'), 10);
   let ssTop, ssLeft;
   if (Math.random() < prTopSpawn) { // spawn from top
-    ssTop = `-${maxStarSize + 1}px`;
+    ssTop = `-${maxStarSize + 2*starGlowRadius + 1}px`;
     ssLeft = `${random(0, 100)}%`;
   } else { // spawn from left
     ssTop = `${random(0, 100)}%`;
-    ssLeft = `-${maxStarSize + 1}px`;
+    ssLeft = `-${maxStarSize + 2*starGlowRadius + 1}px`;
   }
 
   const cssText = `
@@ -39,7 +40,6 @@ function createShootingStar(backgroundContainer, rs) {
     animation-delay: ${random(0, 20)}s;
   `;
   shootingstar.style.cssText = cssText;
-
 
   shootingstar.addEventListener('animationend', () => {
     shootingstar.remove();
@@ -88,7 +88,7 @@ waitForElement(['.z-0'], ([topContainer]) => {
   }
 
   // shooting stars
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 4; i++) {
     createShootingStar(backgroundContainer, rs);
   }
 });

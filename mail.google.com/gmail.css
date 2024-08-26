@@ -1,0 +1,109 @@
+:root {
+  --bg-link: url('https://drive.google.com/uc?export=view&id=1W1kTxgLYfePtoshWORQZDr65OJRsccUh');
+  --bg-brightness: 0.3;
+  --clr-na: #aaaaaa;
+  --clr-nf: #ffffff;
+  
+  --clr-header: #101030;
+  --clr-grad-dark-2: #101018;
+  --clr-grad-dark: #102030;
+  --clr-grad-dark-o50: #10203080;
+  --clr-grad-mid: #102050;
+  --clr-grad-mid-o50: #10205080;
+  --clr-grad-light: #203060;
+  --clr-grad-light-2: #204080;
+  --clr-button-hover: #112244;
+  --clr-new-email-header: #80a0f0;
+}
+
+
+/***** MAIN STUFF *****/
+
+/* Font: https://font.download/font/autumn-harvest */
+.J-Ke, .aKz, .hP, .GX, .GT, .J-N-Jz, .gD, .go, .g3, .ams, .gI, .yP, .zF, .bog, .ZG, .aAv, .CK, .CJ, .bAq, .av, .d-Na-N-UX, .d-Na-N-M7-awE, .ZH, .gstq_d, .J-J5-Ji, .acM, .xW, .asor_b, .asor_e, .a8k, .H5, .ts, .Og, .ayf, .hN, .y2, .bmE, .aL8, .go, .hb, .Kj-JD-K7-K0, .xy, .ajK, .xx, .J-at1-auR, .aYF, .aoT, .agP.aFw, .aIa.aFw, .agP.aFx, .aIa.aFx, .aQ2, .oL, .aKs, .v .fZ, .v .f1, .dt, .r7, .ra, body, input, textarea, select, button, .Jy, .asd, .VO, .OG, .Q2, .aIY, .a21, .ST, .bY, .aD, .l0 {
+  font-family: autumn harvest !important;
+}
+
+/* primary header bar */
+.bbg {
+  background: var(--clr-header) !important;
+}
+/* body */
+.aqk, .z {
+  background: linear-gradient(0deg, var(--clr-grad-dark), var(--clr-grad-light));
+  position: relative;
+}
+.z::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--bg-link);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(var(--bg-brightness));
+}
+.Tm {
+  background: transparent !important;
+}
+/* side bar */
+.aeN {
+  background: linear-gradient(0deg, var(--clr-grad-dark), var(--clr-grad-light)) !important;
+}
+
+/* mail item list */
+.y2 {
+  color: var(--clr-na) !important;
+}
+.zA {
+  transition: .2s !important;
+}
+.zA:hover {
+  transform: scaleX(0.995) !important;
+  filter: brightness(1.5) !important;
+}
+/* read */
+.yO {
+  background: transparent !important;
+}
+.yO:hover {
+  background: linear-gradient(90deg, var(--clr-grad-mid-o50), var(--clr-grad-dark-o50)) !important;
+}
+/* unread */
+.zE {
+  background: linear-gradient(90deg, var(--clr-grad-light), var(--clr-grad-mid)) !important;
+}
+/* selected */
+.x7 {
+  filter: brightness(1.3) !important;
+}
+
+/* compose button */
+.z0>.L3 {
+  margin-right: 12px !important;
+  border-radius: 50px !important;
+  background-color: var(--clr-grad-dark) !important;
+  transition: background-color 0.2s ease !important;
+  font-size: larger !important;
+  color: var(--clr-nf) !important;
+}
+.z0>.L3:hover {
+  background-color: var(--clr-button-hover) !important;
+}
+
+/* right side panel */
+.brC-dA-I.aT5-aOt-I-Jp,
+/* support */
+.zo {
+  display: none !important;
+}
+
+
+/***** NEW EMAIL *****/
+
+/* header bar */
+.l {
+  background: linear-gradient(0deg,
+                              var(--clr-new-email-header),
+                              color-mix(in srgb, var(--clr-new-email-header), white 30%))
+              !important;
+}
